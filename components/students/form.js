@@ -1,0 +1,51 @@
+const form = {
+	view: "form",
+	elements: [
+		{ template: "<img src='assets/lady.svg' alt='picture'/>" },
+		{ view: "text", label: "First Name", placeholder: "First Name" },
+		{ view: "text", label: "Last Name", placeholder: "Last Name" },
+		{ view: "datepicker", label: "Birthday" },
+		{ view: "text", label: "Email", placeholder: "E-mail" },
+		{
+			view: "richselect",
+			label: "Country",
+			placeholder: "Click to select",
+			options: [
+				{ value: "Afghanistan", id: 1 },
+				{ value: "Aland Islands", id: 2 },
+				{ value: "Albania", id: 3 },
+				{ value: "Algeria", id: 4 },
+				{ value: "American Samoa", id: 5 },
+				{ value: "Andorra", id: 6 },
+				{ value: "Angola", id: 7 },
+				{ value: "Anguilla", id: 8 },
+				{ value: "Antarctica", id: 9 },
+				{ value: "Antigua and Barbuda", id: 10 },
+				{ value: "Argentina", id: 11 },
+				{ value: "Armenia", id: 12 },
+				{ value: "Aruba", id: 13 },
+				{ value: "Australia", id: 14 },
+				{ value: "Austria", id: 15 },
+				{ value: "Azerbaijan", id: 16 },
+				{ value: "Bahamas", id: 17 },
+				{ value: "Bahrain", id: 18 },
+				{ value: "Bangladesh", id: 19 },
+				{ value: "Barbados", id: 20 },
+				{ value: "Belarus", id: 21 },
+				{ value: "Belgium", id: 22 },
+				{ value: "Belize", id: 23 },
+				{ value: "Benin", id: 24 },
+			],
+		},
+		{
+			cols: [
+				{},
+				{ view: "button", value: "Reset" },
+				{ view: "button", value: "Add" },
+			],
+		},
+	],
+};
+export const formSection = {
+	rows: [{ template: "Add new student", type: "header" }, form],
+};
